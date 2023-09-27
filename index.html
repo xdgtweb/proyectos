@@ -1,44 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  width: 100vw;
-  font-family: 'Poppins', sans-serif;
-}
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      font-family: 'Poppins', sans-serif;
+    }
 
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.container p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-}
+    .container p {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
 
-</style>
+    .caja1 {
+      display: grid;
+      border: gray 3px solid;
+      border-radius: 20px;
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 180px;
+      text-align: center;
+      transition: 0.3s;
+      background-color: rgb(233, 233, 233);
+    }
+
+    .caja1:hover {
+      border: green 3px solid;
+      background-color: greenyellow;
+      transition: 0.3s;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a img {
+      border: 3px gray solid;
+      border-radius: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 220px;
+      height: auto;
+    }
+
+    a:hover img {
+      border: 3px green solid;
+    }
+
+    a label {
+      pointer-events: none;
+      margin-top: 7px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 550px) {
+
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-  <p>Todavía no hay nada por aquí...</p>  
-</div>
+  <div class="container">
+    <a href="http://portalrickymorty.000.pe/" class="caja1">
+      <img src="img/portalrickymorty.png">
+      <label>Web fan de Rick y Morty</label>
+    </a>
+    <a href="http://club73.000.pe/" class="caja1">
+      <img src="img/club73.png">
+      <label>Gastro Bar</label>
+    </a>
+  </div>
 
 </body>
+
 </html>
